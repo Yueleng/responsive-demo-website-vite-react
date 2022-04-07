@@ -28,13 +28,13 @@ const GlideSlide = styled.div`
 const GlideSlideImg = styled.img`
   object-fit: cover;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
 `;
 
 const GlideSlideVideo = styled.video`
   object-fit: cover;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
 `;
 
 const SlideCaption = styled.div`
@@ -149,7 +149,7 @@ function GlideComponent() {
               <ExploreButton>探索更多</ExploreButton>
             </SlideCaptionLeft>
             <BackDrop />
-            <GlideSlideVideo src={personTypingVideo} />
+            <GlideSlideVideo src={personTypingVideo} autoPlay muted loop />
           </GlideSlide>
         </div>
       </div>
