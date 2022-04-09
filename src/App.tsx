@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Glide from "./components/Glide";
 import AboutUsSection from "./components/AboutUs";
 import SuccessCases from "./components/SuccessCases";
+import ServiceFlow from "./components/ServiceFlows";
 import { ContentWrapper } from "./components/ContentRegion";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <ContentWrapper>
         <AboutUsSection />
         <SuccessCases />
+        <ServiceFlow />
       </ContentWrapper>
     </div>
   );

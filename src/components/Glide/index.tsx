@@ -91,13 +91,13 @@ const SlideCaptionLeft = styled(SlideCaption)`
 function GlideComponent() {
   useEffect(() => {
     const glide = new Glide(".glide", { startAt: 0 });
-
+    const mountedGlide = glide.mount();
     glide.on(["mount.after", "run.after"], () => {
       // 获取轮播标题实例
       const captionsEl = document.querySelectorAll(".slide-caption");
       // 获取当前展示的轮播index
-
-      const caption = captionsEl[0];
+      const currentIndex = mountedGlide.index;
+      const caption = captionsEl[currentIndex];
       anime({
         // 对每个子元素进行动画
         targets: caption.children,
@@ -123,7 +123,6 @@ function GlideComponent() {
         el.style.opacity = "0";
       });
     });
-    glide.mount();
   }, []);
 
   return (

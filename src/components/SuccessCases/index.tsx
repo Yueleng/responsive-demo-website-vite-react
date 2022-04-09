@@ -5,7 +5,11 @@ import { SectionBg, Title } from "../ContentRegion";
 import { useWindowDimensions } from "../../hooks";
 
 interface FilterBtnProps {
-  readonly active: boolean;
+  active: boolean;
+}
+
+interface CasesProps {
+  height: number;
 }
 
 const ShowCases = styled(SectionBg)`
@@ -40,7 +44,9 @@ const FilterBtn = styled.button<FilterBtnProps>`
   }
 `;
 
-const Cases = styled.div`
+const Cases = styled.div<CasesProps>`
+  position: relative;
+  height: ${(p) => p.height}px;
   width: 100vw;
 
   & .case-item {
@@ -212,7 +218,7 @@ function SuccessCases() {
           </FilterBtn>
         ))}
       </FilterBtns>
-      <Cases>
+      <Cases height={((width + 25) / (4 * 1.25)) * 2}>
         <IsoTopeGrid
           gridLayout={imgsDefault}
           noOfCols={4} // number of columns show in one row

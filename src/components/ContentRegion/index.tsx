@@ -40,10 +40,11 @@ export const SectionBg = styled(Section)`
 
   &::before {
     content: "";
+    display: block;
     position: absolute;
     background-color: #f9fbfb;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     z-index: -1;
   }
 `;
