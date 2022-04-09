@@ -11,5 +11,6 @@ https://stackoverflow.com/questions/69444225/how-do-i-deploy-to-heroku-using-vit
 - Basic syntax of `Styled Component`
 - Global Styles
 - Pseudo classes styled components
-- `Styled Component` Extension
+- Extending Styles
 - FontAwesome in React
+- Adapting based on prop

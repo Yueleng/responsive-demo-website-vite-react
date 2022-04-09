@@ -13,9 +13,11 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@glidejs/glide": "^3.5.2",
+    "@types/styled-components": "^5.1.25",
     "animejs": "^3.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-isotope": "^1.0.7",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
@@ -23,7 +25,6 @@
     "@types/glidejs__glide": "^3.4.1",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
-    "@types/styled-components": "^5.1.24",
     "@vitejs/plugin-react": "^1.0.7",
     "sass": "^1.49.11",
     "typescript": "^4.5.4",

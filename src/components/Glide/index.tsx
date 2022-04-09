@@ -96,6 +96,7 @@ function GlideComponent() {
       // 获取轮播标题实例
       const captionsEl = document.querySelectorAll(".slide-caption");
       // 获取当前展示的轮播index
+
       const caption = captionsEl[0];
       anime({
         // 对每个子元素进行动画
